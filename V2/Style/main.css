@@ -1,0 +1,94 @@
+h1{
+    color: aliceblue;
+    text-align: center;
+    text-decoration:underline #AC7B84 2px;
+    font-size: 70px;
+}
+
+body{
+    background-color: #191923;
+}
+
+.flexible{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+button{
+    font-size: 40px;
+    position: relative;
+    align-self: center;
+    width: fit-content;
+    min-height: fit-content;
+    max-height: 80px;
+    
+    border: none;
+    border-radius: 7px;
+    background-color: #AC7B84;
+    color: aliceblue;
+}
+
+button:hover{
+    background-color: #65B891;
+    border-right: 3px solid #317053;
+    border-bottom: 3px solid #317053;
+    cursor: pointer;
+}
+
+button:active{
+    transform: translate(3px, 3px);
+    border: none;
+}
+
+form{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 30px;
+}
+
+form label{
+    color: aliceblue;
+}
+
+input{
+    font-size: 35px;
+}
+
+.backButtonTitle{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    transform: translateX(-150px);
+    margin-left: 150px;
+    gap: 50px;
+}
+
+#submit{
+    font-size: 40px;
+    position: relative;
+    align-self: center;
+    width: fit-content;
+    min-height: fit-content;
+    max-height: 80px;
+
+    border: none;
+    border-radius: 7px;
+    background-color: #65B891;
+    border-right: 3px solid #317053;
+    border-bottom: 3px solid #317053;
+    color: aliceblue;
+}
+
+#submit:hover{
+    background-color: #68e0a8;
+    cursor: pointer;
+}
+
+
+#submit:active{
+    transform: translate(3px, 3px);
+    border: none;
+}
