@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendules</title>
+    <link rel="stylesheet" href="Style/main.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div id="menu0">
+            <h1>Observations sur les oscillateurs couplés</h1>
+                <button id="penSans" onclick="showMenu(1)">Pendules couplés (sans force externe)</button>
+                <button id="penAvec" onclick="showMenu(2)">Pendules couplés (avec force externe)</button>
+        </div>
+
+        <div id="menu1">
+            <div class="backButtonTitle">
+                <h1>Pendules couplés (sans force externe)</h1>
+                <button id="backTrack" onclick="showMenu(0)">Retour au menu</button>
+            </div>
+
+            <button id="t2Norm" onclick="setCalcState(0)">Comparaison T2 (pas de force externe)</button>
+            <button id="t2Extrem" onclick="setCalcState(1)">Comparaison T2 sans extrémités (pas de force externe)</button>
+            <button id="t2_2D" onclick="setCalcState(2)">Comparaison T2 2D (pas de force externe)</button>  
+        </div>
+
+        <div id="menu2">
+            <div class="backButtonTitle">
+                <h1>Pendules couplés (avec force externe)</h1>
+                <button id="backTrack" onclick="showMenu(0)">Retour au menu</button>
+            </div>
+    
+            <button id="t2Avec" onclick="setCalcState(3)">Comparaison T2 (pas de force externe)</button>
+        </div>
+
+        <div id="menu3">
+            <div class="backButtonTitle">
+                <h1 id="title"></h1>
+                <button id="backTrack" onclick="showMenu(0)">Retour au menu</button>
+            </div>
+        
+            <form action="">
+                <div>
+                    <label for="sites">Nombres de sites:</label>
+                    <input type="number" placeholder="2" step="1" min="2" id="sites">
+                </div>
+                <div>
+                    <label for="Longeur">Longeur (m):</label>
+                    <input type="number" placeholder="1.0" step="0.1" id="Longeur">
+                </div>
+                <div>
+                    <label for="masse">Masse (kg):</label>
+                    <input type="number" placeholder="1.0" step="0.1" id="masse">
+                </div>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="Scripts/Main.js"></script>
+</body>
+</html>
